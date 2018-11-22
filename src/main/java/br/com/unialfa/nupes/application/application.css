@@ -1,0 +1,49 @@
+.botaoUsuario {
+	-fx-background-image:url("../image/Usuario.png")
+}
+.botaoCadastro{
+	-fx-background-image:url("../image/Cadastro.png")
+
+	}
+.botaoRelatorio{
+		-fx-background-image:url("../image/Relatorios.png")
+
+	}
+.botaoDocumento{
+	-fx-background-image:url("../image/Documentos.png")
+
+	}
+.botaoAluno{
+		-fx-background-image:url("../image/Aluno.png")
+}
+.botaoProfessor{
+		-fx-background-image:url("../image/Professor.png")
+}
+.botaoBanca{
+		-fx-background-image:url("../image/Banca.png")
+}
+.botaoCurso{
+		-fx-background-image:url("../image/Cursos.png")
+}
+.botaoAdd{
+		-fx-background-image:url("../image/add.png")
+}
+.botaoVoltar{
+	-fx-background-image:url("../image/Votar.png")
+}
+.botaoSalvar{
+	-fx-background-image:url("../image/salvar.png")
+}
+.fundo{
+	-fx-background-image:url("../image/FUNDO.png")
+}
+.fundocad{
+	-fx-background-image:url("../image/FUNDOCAD.png")
+}
+.fundocadp{
+	-fx-background-image:url("../image/FUNDOCADP.png")
+}
+.fundoprincipal{
+		-fx-background-image:url("../image/FUNDOPRINCIPAL.png")
+	
+}

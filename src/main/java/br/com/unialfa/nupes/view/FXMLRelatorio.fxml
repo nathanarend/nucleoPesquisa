@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="47.0" prefWidth="774.0" style="-fx-background-color: #5882FA;">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="64.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton layoutX="686.0" layoutY="9.0" style="-fx-background-color: #f2f2f2; -fx-padding: 6; -fx-background-radius: 15;" text="Deslogar" />
+            <Text layoutX="24.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relatórios" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Group layoutX="102.0" layoutY="185.0" />
+      <ComboBox layoutX="14.0" layoutY="126.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="202.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ComboBox>
+      <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Professor(a):" />
+      <Text layoutX="264.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bancas" />
+      <ComboBox layoutX="264.0" layoutY="126.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="202.0">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </ComboBox>
+      <Button layoutX="19.0" layoutY="195.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="106.0" text="Filtrar" />
+      <TableView layoutX="14.0" layoutY="240.0" prefHeight="272.0" prefWidth="748.0">
+        <columns>
+          <TableColumn prefWidth="257.0" text="Professor(a)" />
+            <TableColumn prefWidth="246.0" text="Banca" />
+          <TableColumn prefWidth="244.0" text="Aluno(a)" />
+        </columns>
+      </TableView>
+      <ComboBox layoutX="513.0" layoutY="124.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="202.0">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </ComboBox>
+      <Text layoutX="514.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aluno" wrappingWidth="45.64453125" />
+   </children>
+</AnchorPane>

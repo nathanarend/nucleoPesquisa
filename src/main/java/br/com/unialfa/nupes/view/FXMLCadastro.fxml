@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PaneCadastro1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="774.0" styleClass="fundoprincipal" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.unialfa.nupes.controller.PrincipalController">
+   <children>
+      <Pane fx:id="PaneCadastro" prefHeight="47.0" prefWidth="774.0" style="-fx-background-color: #5882FA;">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="64.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="316.0" layoutY="7.0" text="CADASTROS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnVoltar" layoutX="15.0" layoutY="9.0" onAction="#voltar" prefHeight="27.0" prefWidth="28.0" styleClass="botaoVoltar" stylesheets="@../application/application.css" text=" " />
+         </children>
+      </Pane>
+      <Group layoutX="170.0" layoutY="189.0">
+         <children>
+            <JFXButton minHeight="134.0" onAction="#cadBanca" prefWidth="134.0" styleClass="botaoBanca" stylesheets="@../application/application.css" text=" " />
+            <JFXButton layoutX="147.0" minHeight="134.0" onAction="#cadAluno" prefWidth="134.0" styleClass="botaoAluno" stylesheets="@../application/application.css" text=" " />
+            <JFXButton fx:id="btnCadProfessor" layoutX="294.0" minHeight="134.0" onAction="#CadProfessor" prefHeight="131.0" prefWidth="134.0" styleClass="botaoProfessor" stylesheets="@../application/application.css" text=" " />
+         </children>
+      </Group>
+      <Separator layoutX="145.0" layoutY="163.0" prefHeight="3.0" prefWidth="481.0" />
+      <Separator layoutX="145.0" layoutY="349.0" prefHeight="10.0" prefWidth="481.0" />
+      <Separator layoutX="145.0" layoutY="162.0" orientation="VERTICAL" prefHeight="194.0" prefWidth="6.0" />
+      <Separator layoutX="623.0" layoutY="163.0" orientation="VERTICAL" prefHeight="194.0" prefWidth="6.0" />
+      <Label layoutX="673.0" layoutY="500.0" text="® S.i  2018/02">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

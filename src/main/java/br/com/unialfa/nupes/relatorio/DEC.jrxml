@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DEC" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f45d27a4-445d-41df-9d67-52a1cb54e1f3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="nProfOrientador" class="java.lang.String"/>
+	<field name="semestre" class="java.lang.String"/>
+	<field name="nomeBanca" class="java.lang.String"/>
+	<field name="nomeCurso" class="java.lang.String"/>
+	<field name="nProfLeitor1" class="java.lang.String"/>
+	<field name="nProfLeitor2" class="java.lang.String"/>
+	<field name="aluno1" class="java.lang.String"/>
+	<field name="aluno3" class="java.lang.String"/>
+	<field name="aluno2" class="java.lang.String"/>
+	<field name="nProfOrientador2" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="230" y="20" width="108" height="50" uuid="566d048d-46af-401c-86ed-2e618edbcd56"/>
+				<imageExpression><![CDATA["src/main/java/br/com/unialfa/nupes/image/Unialfa.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="220" y="20" width="100" height="30" uuid="23f6591c-e8e7-4546-8396-abf9e4ae1290"/>
+				<textElement>
+					<font isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[D E C L A R A Ç Ã O]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="201" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="70" width="240" height="20" uuid="137e933f-0f55-4777-9a15-bda9052c0cfc"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Declaramos para os devidos fins que o(a) professor(a):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="241" y="70" width="155" height="20" uuid="2b609418-4171-4c0b-b9c0-ff26a190c43f"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nProfOrientador}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="396" y="70" width="139" height="20" uuid="6e700c59-7614-4607-9d3e-393abb517422"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[participou de Defesa de TCC, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="90" width="120" height="20" uuid="b81dd9a9-d708-4993-9b50-26d8eaa3cf6e"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[realizada no semestre]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="129" y="90" width="72" height="20" uuid="3adba02e-edd8-4d1c-8bf8-baae72c6941b"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{semestre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="205" y="90" width="319" height="20" uuid="d89c3a02-2ad8-4175-9c28-c922b222cfa1"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[na condição de professor(a) Orientador(a) do Trabalho de Conclusão]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="110" width="110" height="20" uuid="1087f9eb-6c40-4a3f-ad0b-079c8e3ea801"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[de Curso intitulado:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="121" y="110" width="94" height="20" uuid="2bf06b05-1ddf-4074-ae7b-d8c970de9af9"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomeBanca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="216" y="110" width="74" height="20" uuid="c29be764-e10c-4a36-9e63-5398a0dd9e58"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[dos alunos: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="291" y="110" width="104" height="20" uuid="d96af667-34ea-4fb1-b1b8-e055417bf734"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{aluno1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="110" width="140" height="20" uuid="26f1c747-c1bf-4d17-b256-53711fc65c86"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{aluno2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="101" y="130" width="60" height="20" uuid="975917b7-4297-4ce9-b6d0-277263ba57ec"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[do curso]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="181" y="130" width="200" height="20" uuid="49ede48c-e9fe-4be5-a6d9-32c985805461"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomeCurso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="11" y="130" width="90" height="20" uuid="f42291c1-4fc6-43e7-a6ab-b6c2b1bd146d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6ee3f532-da85-4109-bf6f-8643c2e1ca9d"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{aluno3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="162" y="130" width="20" height="20" uuid="04976f32-192b-4990-a90a-9469119f04d0"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[de]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="394" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="70" width="120" height="20" uuid="327d0ca3-5311-4770-bc71-0f595ffb4f88"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Professor(a) Leitor(a):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="120" height="20" uuid="f47b732d-e473-4a2e-a7b1-67a0a0c584d7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Professor(a) Leitor(a):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="70" width="150" height="20" uuid="04fbeb3e-1003-4930-9d39-607fc6ef8f26"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nProfLeitor1};]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="50" width="181" height="20" uuid="0906314f-61c5-4473-ad02-41996b080f40"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nProfOrientador2};]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="90" width="150" height="20" uuid="7cbd57f7-1630-4717-8551-c32cafa9e293"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nProfLeitor2};]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="50" width="100" height="20" uuid="c86805ad-92ee-49bc-a525-15657f43ff20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Orientador(a):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="184" height="21" uuid="fd5b527d-df0c-46b2-bdd1-7b786447bf3b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Composição completa da Banca:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-5" y="180" width="305" height="20" uuid="5c29381c-daf6-481e-8d72-57a2d2b48a38"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Por ser verdade firmamos a presente declaração:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="299" width="360" height="30" uuid="67f158dd-bed2-4719-9bcf-11c984b55ebb"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="330" width="290" height="23" uuid="fafd065c-be5e-48af-9cfb-8f186372a94c"/>
+				<textElement>
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Gerente de Planejamento e Operações Acadêmicas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="310" width="174" height="25" uuid="00edd0b5-8073-4b7f-b542-fd51c6cda655"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Itla José de Almeida.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

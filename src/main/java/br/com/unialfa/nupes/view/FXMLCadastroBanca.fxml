@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="774.0" styleClass="fundocad" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.unialfa.nupes.controller.CadastroBancaController">
+   <children>
+      <Pane prefHeight="47.0" prefWidth="774.0" style="-fx-background-color: #5882FA;">
+         <children>
+            <ImageView fx:id="btnVolta" fitHeight="47.0" fitWidth="64.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="270.0" layoutY="6.0" prefHeight="36.0" prefWidth="235.0" text="CADASTRO BANCA" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnVoltar" layoutX="20.0" layoutY="11.0" onAction="#voltarTela" prefHeight="25.0" prefWidth="27.0" styleClass="botaoVoltar" stylesheets="@../application/application.css" text=" " />
+         </children>
+      </Pane>
+      <Group layoutX="102.0" layoutY="185.0" />
+      <JFXTextField fx:id="txtNomeBanca" focusColor="#fefeff" labelFloat="true" layoutX="137.0" layoutY="98.0" prefHeight="29.0" prefWidth="367.0" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cbQtd" focusColor="#eeeeee" layoutX="487.0" layoutY="257.0" onAction="#selecionaQtd" promptText="-" unFocusColor="#030303" />
+      <JFXComboBox fx:id="cbOrientador" focusColor="WHITE" layoutX="210.0" layoutY="155.0" prefHeight="26.0" prefWidth="291.0" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cbLeitor" layoutX="173.0" layoutY="210.0" prefHeight="26.0" prefWidth="330.0" unFocusColor="BLACK" />
+      <JFXButton fx:id="btnAdicionaLeitor" layoutX="515.0" layoutY="213.0" minHeight="26.0" minWidth="26.0" onAction="#adicionaProfOrientador" prefHeight="16.0" prefWidth="15.0" styleClass="botaoAdd" stylesheets="@../application/application.css" text=" " />
+      <JFXComboBox fx:id="cbAluno" focusColor="#f2f2f2" layoutX="95.0" layoutY="297.0" prefHeight="26.0" prefWidth="428.0" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cbAluno2" focusColor="WHITE" layoutX="102.0" layoutY="343.0" prefHeight="26.0" prefWidth="428.0" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cbAluno3" focusColor="#f5f5f5" layoutX="102.0" layoutY="393.0" prefHeight="26.0" prefWidth="428.0" unFocusColor="BLACK" />
+      <Label layoutX="29.0" layoutY="261.0" text="DATA APRESENTAÇÃO:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <JFXDatePicker fx:id="dtData" defaultColor="BLACK" layoutX="173.0" layoutY="249.0" prefHeight="26.0" prefWidth="162.0" />
+      <Label layoutX="29.0" layoutY="112.0" text="NOME DA BANCA:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="txtAluno1" layoutX="29.0" layoutY="310.0" text="ALUNO 01 : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="168.0" text="PROFESSOR(A) ORIENTADOR(A):">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="214.0" text="PROFESSOR(A) LEITOR(A):">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="txtAluno2" layoutX="31.0" layoutY="354.0" text="ALUNO 02 :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="txtAluno3" layoutX="29.0" layoutY="403.0" text="ALUNO 03 :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <JFXButton fx:id="btnSalvar" buttonType="RAISED" layoutX="647.0" layoutY="451.0" minHeight="29.0" minWidth="66.0" onAction="#save" prefHeight="29.0" prefWidth="66.0" style="-fx-background-color: #2E2E2E;" stylesheets="@../application/application.css" text="SALVAR" textFill="WHITE" />
+      <Label layoutX="338.0" layoutY="261.0" text="QUANTIDADE ALUNOS:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Separator layoutX="10.0" layoutY="59.0" prefHeight="3.0" prefWidth="750.0" />
+      <Separator layoutX="8.0" layoutY="506.0" prefHeight="3.0" prefWidth="750.0" />
+      <Separator layoutX="8.0" layoutY="57.0" orientation="VERTICAL" prefHeight="448.0" prefWidth="1.0" />
+      <Separator layoutX="761.0" layoutY="58.0" orientation="VERTICAL" prefHeight="448.0" prefWidth="1.0" />
+   </children>
+</AnchorPane>
